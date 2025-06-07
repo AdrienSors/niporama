@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-auto-columns: auto;
+}
+
+.japanese-language {
+    /* spacing */
+    margin: 1em;
+    padding: 1em;
+
+    /* borders */
+    border: 4px solid black;
+    border-radius: 5px;
+
+    display: grid;
+    grid-template-columns: 3fr 6fr 1fr;
+    grid-template-rows: 2fr 1fr 20fr 1fr;
+    gap: 1em 1em;
+}
+
+header {
+    border: 4px solid olivedrab;
+    border-radius: 5px;
+
+    grid-column: 1/4;
+    grid-row: 1;
+
+    text-align: center;
+}
+
+/* main top tools pane */
+.top-tool-pane {
+    padding: 1em;
+
+    border: 4px solid red;
+    border-radius: 5px;
+
+    grid-column: 1/4;
+    grid-row: 2;
+}
+
+/* left side nav */
+.left-side-nav {
+    padding: 1em;
+
+    border: 4px solid #0088B9;
+    border-radius: 5px;
+
+    grid-column: 1;
+    grid-row: 3;
+}
+
+/* main content wrapper */
+.main-display-pane {
+    padding: 1em;
+
+    border: 4px solid #ff4800;
+    border-radius: 5px;
+
+    background-color: #B75555;
+
+    grid-column: 2/3;
+    
+    display: grid;
+    grid-template-rows: min-content;
+    gap: 1em;
+}
+
+article.grammar-point {
+    padding: 1em;
+
+    background-color: #B75555;
+    border-radius: 1em;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 4fr;
+    grid-template-rows: auto 1fr;
+    gap: 1em;
+}
+
+article.grammar-point h1 {
+    font-size:2.5em;
+    font-weight: bolder;
+    text-align: center;
+
+    margin: auto;
+}
+
+article.grammar-point-construction {
+    margin: auto;
+}
+
+article.grammar-point-construction p {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align:center;
+
+    margin: auto;
+}
+
+.red-highlight {
+    font-weight: bolder;
+    color: #B75555;
+
+    margin: auto;
+}
+
+article.grammar-point-meaning p {
+    font-size: 1.2em;
+}
+
+.grammar-point-exemples {
+    padding: 1em;
+    border: 2px solid ;
+
+    background-color: gold;
+    border-radius: 0.5em;
+
+    grid-column: 1/4;
+}
+
+li {
+    list-style-type:none;
+}
+
+/* right context menu */
+.right-context-menu {
+    padding: 1em;
+
+    border: 4px solid #c6e000;
+    border-radius: 5px;
+
+    grid-column: 3;
+    grid-row: 3;
+}
+
+/* footer */
+.bottom-metadata-banner {
+    padding: 1em;
+
+    border: 4px solid #00e426;
+    border-radius: 5px;
+
+    grid-column: 1/4;
+    grid-row: 4;
+}

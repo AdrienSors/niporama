@@ -1,0 +1,14 @@
+// Creer un projet symfony : 
+symfony new nipponrama
+
+// Vérifier les pré-requis : 
+symfony check requirements
+
+// Lancer le server symfony php
+// Depuis le répertoire /nipponrama
+symfony server:start
+
+// Lancer un debugger sur les routes
+// Depuis le répertoire /nipponrama
+php bin/console debug:router
+
