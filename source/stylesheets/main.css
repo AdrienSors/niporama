@@ -14,6 +14,33 @@ body {
     display: grid;
     grid-template-rows: 1fr;
     grid-auto-columns: auto;
+
+    grid-template-areas: 
+        "header"
+        "top-tool-pane"
+        "left-side-nav main-display-pane right-context-menu"
+        "bottom-metadata-banner";
+
+    /*background: linear-gradient(to right, #de6868, #f7b2b2);*/
+    /*background: radial-gradient(circle at center, #de6868, #f7b2b2);*/
+    /* Dégradé avec transparence. Permet d'ajouter une image de fond texturée avec un voile. */
+    /*
+    Image de fond d'écran se dit "背景" (haikei) en japonais.
+    On emploie également l'expression "背景画像" (haikei gazou) pour désigner une image de fond.
+    Pour les motifs, on utilise "模様" (moyou) ou "柄" (gara).
+    Recherche réalisée pour trouver le fond d'écran approprié : 背景和柄SVG.
+    Image récupérée sur le site : https://rakugaki-biyori.com/background-black-asa-no-ha-moyou/
+    Site web de Rakugaki Biyori, qui propose des fonds d'écran et textures japonaises.
+    Cette image est utilisée pour donner une ambiance japonaise à l'application.
+    L'image est un motif de blé stylisé, qui s'intègre bien avec le thème japonais. 
+    */
+    background: linear-gradient(rgba(222, 104, 104, 0.8), rgba(247, 178, 178, 0)), url('../../assets/images/backgrounds/main-background-black-asa-no-ha-moyou-wheat.svg');
+    background-repeat: repeat;
+    background-size: 200px auto;
+
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    color: #333;
 }
 
 .japanese-language {
