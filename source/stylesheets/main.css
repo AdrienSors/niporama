@@ -34,7 +34,7 @@ body {
     Cette image est utilisée pour donner une ambiance japonaise à l'application.
     L'image est un motif de blé stylisé, qui s'intègre bien avec le thème japonais. 
     */
-    background: linear-gradient(rgba(222, 104, 104, 0.8), rgba(247, 178, 178, 0)), url('../../assets/images/backgrounds/main-background-black-asa-no-ha-moyou-wheat.svg');
+    background: linear-gradient(rgba(70, 11, 11, 0.9), rgba(66, 22, 22, 0.8)), url('../../assets/images/backgrounds/main-background-black-asa-no-ha-moyou-wheat.svg');
     background-repeat: repeat;
     background-size: 200px auto;
 
@@ -185,6 +185,8 @@ header div.grammar-search-bar form button:hover {
     text-align: center;
 
     margin: auto;
+    border-radius: 5px;
+    background-color: rgba(255, 215, 0, 0.7);
 
     grid-column: 2;
     grid-row: 1;
@@ -218,13 +220,13 @@ header div.grammar-search-bar form button:hover {
 }
 
 /* main content wrapper */
-.main-display-pane {
+main.main-display-pane {
     padding: 1em;
 
     border: 4px solid #ff4800;
     border-radius: 5px;
 
-    background-color: #B75555;
+    background-color: rgba(48, 25, 1, 0.4);
 
     grid-column: 2/3;
     
@@ -236,20 +238,31 @@ header div.grammar-search-bar form button:hover {
 article.grammar-point {
     padding: 1em;
 
-    background-color: #B75555;
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 1em;
 
     display: grid;
-    grid-template-columns: 1fr 2fr 4fr;
-    grid-template-rows: auto 1fr;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 0.5fr 0.5fr auto 1fr;
+    grid-template-areas: 
+        "title title title"
+        "construction construction construction"
+        "meaning examples examples";
     gap: 1em;
+
+    color: rgba(218, 165, 32, 0.9);
 }
 
 article.grammar-point h1 {
-    font-size:2.5em;
+    font-size:1.5em;
     font-weight: bolder;
-    text-align: center;
 
+    grid-column: 1/4;
+    grid-row: 1;
+
+    display: flex;
+    justify-content: left;
+    
     margin: auto;
 }
 
