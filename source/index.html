@@ -17,7 +17,7 @@
 
             <div class="grammar-search-bar">
                 <form action="search.html" method="get">
-                    <input type="text" name="query" placeholder="Rechercher..." aria-label="Rechercher dans le site">
+                    <input type="text" name="query" class="search-input" placeholder="Rechercher..." aria-label="Rechercher dans le site">
                     <button type="submit">🔍</button>
                 </form>
             </div>
@@ -34,23 +34,31 @@
             <h1 class="lesson-title">ようになります</h1>
         </nav>
 
-        <aside class="right-context-menu">
-            <svg width="60" height="60"
-                 version="1.1"
-                 xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink">
-                <rect width="100%" height="100%" fill="gold"/>
-                <circle cx="30" cy="30" r="29" fill="#FFF"/>
-                <text x="30"  y="40" font-size="27" text-anchor="middle" fill="#B75555">文法</text>
-            </svg>
-            <svg width="60" height="60"
-                 version="1.1"
-                 xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink">
-                <rect width="100%" height="100%" fill="gold"/>
-                <circle cx="30" cy="30" r="29" fill="#FFF"/>
-                <text x="31"  y="44" font-size="40" text-anchor="middle" fill="#B75555">N5</text>
-            </svg>
+        <aside class="left-context-menu">
+            <div class="tags">
+                <svg width="60" height="60"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <circle cx="30" cy="30" r="29" fill="#B75555"/>
+                    <text x="30"  y="40" font-size="27" text-anchor="middle" fill="goldenrod">N4</text>
+                </svg>
+                <svg width="60" height="60"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <circle cx="30" cy="30" r="29" fill="#B75555"/>
+                    <text x="30"  y="40" font-size="23" text-anchor="middle" fill="goldenrod">文法</text>
+                </svg>
+                <svg width="60" height="60"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <circle cx="30" cy="30" r="29" fill="#B75555"/>
+                    <text x="30"  y="40" font-size="27" text-anchor="middle" fill="goldenrod">N5</text>
+                </svg>
+            </div>
+
             Catégories
             Index
         </aside>
@@ -252,7 +260,7 @@
             -->
         </main>
         
-        <nav class="left-side-nav">
+        <nav class="right-side-nav">
             <p>
                 Le texte qui met en contexte la règle de grammaire.
                 Chaque mot important du texte est surligné en gris très clair et prend une teinte vive et colorée au passage de la souris.
