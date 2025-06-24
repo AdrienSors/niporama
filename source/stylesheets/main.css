@@ -75,8 +75,8 @@ header {
     grid-template-rows: auto auto;
 
     grid-template-areas: 
-        "web-app-title web-app-subtitle web-app-logo"
-        "yet-to-come grammar-search-bar web-app-logo";
+        "web-app-title web-app-subtitle yet-to-come"
+        "yet-to-come grammar-search-bar yet-to-come";
 
     text-align: center;
 }
