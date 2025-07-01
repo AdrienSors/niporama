@@ -1,0 +1,80 @@
+main.main-display-pane article.grammar-point {
+    padding: 0px 1em;
+    
+    background: rgba(30, 30, 30, 0.7);
+    border-radius: 4px;
+    
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 0.5fr 0.5fr auto 1fr;
+    grid-template-areas: 
+    "title title title"
+    "construction construction construction"
+    "meaning examples examples";
+    gap: 1em;
+    
+    color: rgba(183, 140, 32, 0.9);
+}
+
+article.grammar-point h1 {
+    width: 90%;
+
+    background: rgba(0, 0, 0, 0.15);
+    border-bottom: goldenrod 1px solid;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 100px;
+    padding: 0.4em;
+
+    font-size: 1.2em;
+    font-weight: lighter;
+    text-align: center;
+    
+    grid-column: 1/4;
+    grid-row: 1;
+    
+    margin: auto;
+    padding: 0.4em 3em;
+}
+
+article.grammar-point article.grammar-point-construction {
+    margin: auto;
+}
+
+article.grammar-point-construction p {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align:center;
+    
+    margin: auto;
+}
+
+article.grammar-point-construction .red-highlight {
+    font-weight: 700;
+    color: #B75555;
+    
+    margin: auto;
+}
+
+article.grammar-point-meaning p {
+    font-size: 1em;
+}
+
+article.grammar-point article.grammar-point-exemples {
+    padding: 1em;
+    
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    
+    grid-column: 1/4;
+}
+
+article.grammar-point-exemples ul {
+    list-style-type:none;
+}
+
+article.grammar-point-exemples ul li {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.2em;
+    font-weight: 200;
+    line-height: 180%;
+}

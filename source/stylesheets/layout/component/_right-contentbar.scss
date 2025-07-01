@@ -1,0 +1,19 @@
+/* right side nav */
+.right-side-nav {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.right-side-nav p {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+
+    font-size: 1em;
+    font-weight: 100;
+    text-align: left;
+    color: goldenrod;
+    line-height: 1.2;
+    
+    margin: auto;
+    padding: 1em;
+}

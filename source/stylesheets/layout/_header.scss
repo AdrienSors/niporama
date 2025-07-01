@@ -1,0 +1,47 @@
+header {
+    border-radius: 5px;
+
+    grid-column: 1/4;
+    grid-row: 1;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+
+    grid-template-areas: 
+        "web-app-title web-app-subtitle yet-to-come";
+
+    text-align: center;
+}
+
+header h1.web-app-title {
+    font-size: 2.5em;
+    font-weight: bolder;
+    text-align: center;
+    color: goldenrod;
+    text-shadow: 2px 2px 4px red;
+
+    grid-column: 1/4;
+    grid-row: 1;
+
+    margin: auto;
+}
+
+header img.web-app-logo {
+    width: 40%;
+    height: auto;
+    
+    grid-column: 3;
+    grid-row: 1/3;
+    
+    margin: auto;
+
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+
+    border-radius: 100%;
+}
+
+header div.grammar-search-bar form button:hover {
+    background-color: #ff4800;
+}

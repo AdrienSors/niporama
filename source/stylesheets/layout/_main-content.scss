@@ -1,0 +1,42 @@
+@use 'component/top-toolbar';
+@use 'component/left-navbar';
+@use 'component/main-contentpane';
+@use 'component/right-contentbar';          
+
+.main-wrapper {
+    /* spacing */
+    padding: 1em;
+
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr auto 0.2fr;
+    gap: 0 1em;
+
+    grid-template-areas: 
+        "header header header"
+        "main-content main-content main-content"
+        "top-tool-pane top-tool-pane top-tool-pane"
+        "left-side-nav main-display-pane right-context-menu"
+        "bottom-metadata-banner bottom-metadata-banner bottom-metadata-banner";
+}
+
+.main-content {
+    grid-area: main-content;
+    
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-areas: 
+        "top-tool-pane top-tool-pane top-tool-pane"
+        "left-side-nav main-display-pane right-context-menu"
+        "bottom-metadata-banner bottom-metadata-banner bottom-metadata-banner";
+    gap: 1em;
+}
+
+main.main-display-pane {
+    grid-column: 2/3;
+    
+    display: grid;
+    grid-template-rows: min-content;
+    gap: 1em;
+}

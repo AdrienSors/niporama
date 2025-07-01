@@ -1,0 +1,130 @@
+.top-tool-pane {
+    padding: 0;
+    
+    grid-column: 1/4;
+    grid-row: 2;
+    
+    display: grid;
+    grid-template-columns: 1.4fr 2fr 1.4fr;
+    grid-template-rows: auto;
+    column-gap: 1em;
+    
+    grid-template-areas:
+    "breadcrumbs lesson-title grammar-search-bar";
+}
+
+.top-tool-pane div.breadcrumbs {
+    padding: 1em;
+    
+    grid-column: 1;
+    grid-row: 1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: goldenrod;
+}
+
+div.breadcrumbs a {
+    color: goldenrod;
+    text-decoration: none;
+    font-weight: bold;
+    
+    transition: color 0.3s ease-in-out;
+    padding: 0.2em 0.5em;
+    border-radius: 5px;
+}
+
+div.breadcrumbs a:hover {
+    color: #B75555;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 0.2em 0.5em;
+    border-radius: 5px; 
+}
+
+.top-tool-pane h1.lesson-title {
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-align: center;
+    
+    margin: auto;
+    padding: 0.1em 1em;
+    
+    border-radius: 3px;
+    background: rgba(255, 215, 0, 0.2);
+    
+    grid-column: 2;
+    grid-row: 1;
+    
+    color: rgba(15, 15, 15, 0.85);
+}
+
+.top-tool-pane div.grammar-search-bar {
+    grid-column: 3;
+    grid-row: 1;
+    
+    padding: 0.5em;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-tool-pane div.grammar-search-bar {
+    padding: 1em;
+    
+    grid-column: 3;
+    grid-row: 1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-tool-pane div.grammar-search-bar form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+div.grammar-search-bar form input[type="text"] {
+    width: 100%;
+    padding: 0.5em;
+    
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    
+    font-size: 1em;
+}
+
+div.grammar-search-bar form input[type="text"]::placeholder {
+    color: rgba(218, 165, 32, 0.7);
+    font-style: italic;
+}
+
+div.grammar-search-bar form input[type="text"]:focus {
+    outline: none;
+    border: 2px solid #B75555;
+    box-shadow: 0 0 5px rgba(218, 165, 32, 0.7);
+}
+
+div.grammar-search-bar form input[type="text"]:hover {
+    background-color: var(--kinari-iro);
+    background-color: rgb(from color var(--kinari-iro) red green blue 0.9);
+}
+
+div.grammar-search-bar form button[type="submit"] {
+    display: none; /* Hide the default submit button */
+}
+
+div.grammar-search-bar form button {
+    padding: 0.5em 1em;
+    background-color: #B75555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
